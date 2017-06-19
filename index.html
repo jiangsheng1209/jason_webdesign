@@ -12,15 +12,6 @@
   <link href="css/style-v2.5-print.css" media="print" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <!--[if lt IE 9]>
-  <script>
-  !function(body) {
-  body.style.width = body.style.height = '100%';
-  body.parentNode.style.overflow = body.style.overflow = 'hidden';
-  }(document.body);
-  </script>
-  <iframe src="oldBrowser.html" frameborder="0" scrolling="no" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0; z-index: 99999;"></iframe>
-  <![endif]-->
   <header class="header">
   	<div class="boundary clearfix">
   		<h1 class="header__logo">
@@ -40,9 +31,9 @@
   				<li class="header__address__item header__address__item-email"><script>
   					document.write( ['com', 'qq', '522310244'].reverse().join('.').replace('.', '@') );
   				</script></li>
-  				<!-- <li class="header__address__item header__address__item-blog">
+  				<li class="header__address__item header__address__item-blog">
   					<a class="button">个人博客正在搭建中....</a>
-  				</li> -->
+  				</li>
   			</ul>
   		</address>
   	</div>
@@ -51,7 +42,7 @@
     <section class="section">
 		  <div class="boundary">
 			<header class="section__header">
-				<h2 class="section__header__title">一个认真工作的前端工程师的告白</h2>
+				<h2 class="section__header__title">精通前端，略懂后端 <span style="font-size:13px;">(如有后端硬性需求，可忽略不计)</span></h2>
 				<h3 class="section__header__subtitle"><script>document.write( (new Date).getFullYear() - 2013 );</script>年工作经验，编写艺术般的代码</h3>
 			</header>
 			<div class="section-body">
@@ -150,7 +141,6 @@
 						<div class="work-exp-list__company__body content">
 							<p>前端负责人。<strong>搭建了前端的整体架构</strong>，包括：</p>
 							<ul class="list">
-								<li>开发前后端中间平台，提升开发效率；</li>
 								<li>制定静态资源组织策略和代码发布流程；</li>
 								<li>选用webpack前端资源模块化管理和打包工具，将许多松散的模块按照依赖和规则打包成符合生产环境部署的前端资源,简化发布操作；</li>
                 <li>选用Vue.js作为客户端积分商城的前端框架；</li>
@@ -206,6 +196,33 @@
 				<h3 class="section__header__subtitle">业余项目与公司项目相互促进</h3>
 			</header>
 			<div class="section-body">
+        <section class="project clearfix">
+					<div class="project__intro">
+						<header class="project__intro__header clearfix">
+							<h4 class="project__intro__header__title">拇指玩PC端官方站点</h4>
+							<ul class="tech-tag-list not-for-print">
+								<li class="tech-tag-list__item tech-tag-list__item-javascript">Javascript</li>
+								<li class="tech-tag-list__item tech-tag-list__item-nodejs">npm</li>
+                <li class="tech-tag-list__item tech-tag-list__item-webpack">webpack</li>
+							</ul>
+							<p class="project__intro__header__period">2017/5月 至 2016/6月</p>
+						</header>
+						<div class="content">
+							<p>选用常规jQuery库开发</p>
+              <p>由于需要兼容到IE8,最终决定了选用Sea.js对页面中JavaScript实行模块化开发,易与组合,易与维护</p>
+              <p>整合stylus预处理器和postcss实现编译阶段自动生产、压缩css文件并进行输出优化</p>
+              <p>使用imagesprit对静态图片资源进行整合压缩减少页面请求时的HTTP连接数</p>
+              <p>使用gulp对HTML,JS,CSS进行压缩,混淆,构建,发布</p>
+              <p>性能优化:1、javaScript压缩和模块打包。2、按需加载。3、使用artTemplate.js加速对js中动态DOM进行转义</p>
+							<p class="project__intro__links not-for-print">
+								<a href="http://www.muzhiwan.com" target="_blank">拇指玩</a>
+							</p>
+						</div>
+					</div>
+					<div class="project__thumb not-for-print">
+						<img src="images/mzwpc.png" alt="拇指玩">
+					</div>
+				</section>
 				<section class="project clearfix">
 					<div class="project__intro">
 						<header class="project__intro__header clearfix">
@@ -259,70 +276,9 @@
 						<img src="images/mzw_m.jpg" alt="拇指玩M站">
 					</div>
 				</section>
-        <section class="project clearfix">
-					<div class="project__intro">
-						<header class="project__intro__header clearfix">
-							<h4 class="project__intro__header__title">民生网_民生周刊旗下官网</h4>
-							<ul class="tech-tag-list not-for-print">
-								<li class="tech-tag-list__item tech-tag-list__item-javascript">Javascript</li>
-                <li class="tech-tag-list__item tech-tag-list__item-other">jQuery</li>
-                <li class="tech-tag-list__item tech-tag-list__item-other">ThinkPHP</li>
-							</ul>
-							<p class="project__intro__header__period">2013/3 至今</p>
-						</header>
-						<div class="content">
-							<p>选用常规的jQuery库开发</p>
-              <p>针对浏览器对常规资源做304缓存</p>
-              <p>规范的JS代码书写</p>
-              <p>自主UI设计</p>
-							<p class="project__intro__links not-for-print">
-								<a href="http://www.msweekly.com/" target="_blank">在线地址</a>
-							</p>
-						</div>
-					</div>
-					<div class="project__thumb not-for-print">
-						<img src="images/msweekly.jpg" alt="民生周刊_人民日报社">
-					</div>
-				</section>
-        <section class="project clearfix">
-					<div class="project__intro">
-						<header class="project__intro__header clearfix">
-							<h4 class="project__intro__header__title">健康时报网</h4>
-							<ul class="tech-tag-list not-for-print">
-								<li class="tech-tag-list__item tech-tag-list__item-javascript">Javascript</li>
-                <li class="tech-tag-list__item tech-tag-list__item-other">jQuery</li>
-                <li class="tech-tag-list__item tech-tag-list__item-other">ThinkPHP</li>
-							</ul>
-							<p class="project__intro__header__period">2013/3 至今</p>
-						</header>
-						<div class="content">
-							<p>选用常规的jQuery库开发</p>
-              <p>规范的JS代码书写</p>
-              <p>兼容低端浏览器</p>
-              <p>自主UI设计</p>
-							<p class="project__intro__links not-for-print">
-								<a href="http://www.jksb.com.cn/" target="_blank">在线地址</a>
-							</p>
-						</div>
-					</div>
-					<div class="project__thumb not-for-print">
-						<img src="images/jksb.jpg" alt="健康时报网">
-					</div>
-				</section>
       </div>
 		</div>
 	</section>
   </div>
-  <footer class="footer">
-  	<div class="boundary clearfix">
-  		<div class="footer__qrcode clearfix">
-  			<img src="images/QRJason.png" alt="二维码" class="footer__qrcode__img">
-  			<p class="footer__qrcode__text content">您还可以使用手机或iPad<br>扫描左侧二维码打开本页</p>
-  		</div>
-  		<div class="footer__copyright content">
-  			<p>最后更新于2017年3月2日</p>
-  		</div>
-  	</div>
-  </footer>
 </body>
 </html>

@@ -87,6 +87,21 @@ a.button { display: inline-block; }
 	background: linear-gradient(#4ab4e8, #1491d0);
 }
 
+.section-body .about-me{
+	line-height: 1.7
+}
+
+.section-body .about-me h6{
+	font-weight:500;
+	font-size: 18px;
+	margin-bottom: 15px
+}
+.section-body .about-me li{
+	list-style: disc;
+	margin-left: 1.3em;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
 
 /* é¡µå¤´ */
 .header {
